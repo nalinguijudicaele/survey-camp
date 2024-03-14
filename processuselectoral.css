@@ -1,0 +1,231 @@
+
+
+body{
+    background: linear-gradient(45deg, #cabde0, rgb(142, 173, 161));
+    font-family:Arial, Helvetica, sans-serif ;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    }
+    
+    .contenu {
+        flex: 1 0 auto;
+    }
+    
+    .contenu p {
+        padding:  Svw 10vw;
+        text-align: justify;
+    }
+
+    
+    
+    footer{
+        flex-shrink: 0;
+        border-top: 1px dashed #000;
+        width: 100%;
+        background:#333;
+        color: #f1f1f1;
+    }
+
+    a:hover{
+        color: #9dcbe9;
+    }
+
+    img{
+        width: 35px;
+        cursor: pointer;
+      }
+
+      h3:hover{
+        color: #9dcbe9;
+    }
+
+    .copy {
+        display: inline-block; /* Permet de centrer le contenu à l'intérieur de la div */
+      }
+    
+    .contenu-footer{
+        width: 1200px;
+        margin:0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        font-size: 16px;
+        padding: 75px 0 100px;
+    }
+    .blocs {
+        width: 25%;
+        margin: 0 30px;
+    }
+    
+    .footer-services h3 ,
+    .footer-horaires h3 , 
+    .footer-contacts h3 ,
+    .footer-informations h3 ,
+    .footer-reseaux h3{
+        font-size: 25px;
+        padding-bottom: 20px;
+    }
+    
+    .footer-services p,
+    .footer-contacts p {
+        position: relative;
+        right: 40px;
+    }
+    
+    .liste-services ,
+    .liste-horaires  , 
+    .liste-informations  ,
+    .liste-reseaux {
+        list-style: none;
+        position: relative;
+        right: 40px;
+    }
+    
+    @media screen and (max-width : 1300px ) {
+        .contenu-footer{
+            width: 700px;
+            flex-wrap: wrap;
+        }
+        .bloc{
+            width: 40%;
+            margin: 0 0;
+        }
+        .bloc:nth-child(1),
+        .bloc:nth-child(2) {
+            margin-bottom: 50px;
+        }
+    }
+    
+    @media screen and (max-width : 800px ) {
+        .contenu-footer{
+            width: 320px;
+        }
+        .bloc{
+            width: 300px;
+            margin: 30px 30px;
+        }
+        .bloc:nth-child(1),
+        .bloc:nth-child(2) {
+            margin-bottom: 30px;
+        }
+        .bloc:nth-child(1){
+            margin-top: 0;
+        }
+    }
+
+    header {
+        max-width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+         }
+     
+         nav{
+             display: flex;
+             flex-wrap: wrap;
+             align-items: center;
+             width: 100%;
+             padding: 30px 0 10px;
+         }
+     
+         .logo{
+             width: 170px;
+             padding-right: 200px;
+         }
+     
+         .menu-icon{
+             width: 50px;
+             cursor: pointer;
+         }
+     
+         ul {
+             flex: 1;
+             display: flex;
+             justify-content: flex-end;
+             padding-right: 20px;
+         }
+     
+         ul li {
+             list-style: none;
+             margin-left: 30px;
+         }
+     
+         ul li a {
+            text-decoration: none;
+            color: #f2f2f5;
+            font-size: 1.2rem;
+            transition: color .3s;
+            background: transparent;
+            border: none;
+            border-left:  1px solid rgba(255, 255, 255, .3);
+            border-top: 1px solid rgba(255, 255, 255, .3);
+            padding: 1rem;
+            width: 150px;
+            border-radius: 50px;
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            -moz-backdrop-filter: blur(5px);
+            box-shadow: 4px 4px 60px rgba(0, 0, 0, .2);
+            color: white;
+            font-weight: 500;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+            transition: all .3s;
+            margin-bottom: 15px;
+        }
+    
+        ul li a:hover{
+            color: #1f1266;
+        }
+    
+     
+         li :hover{
+             color: #1f1266;
+         }
+
+
+         .newsletter {
+            text-align: center; /* Centrer le contenu */
+        }
+        
+        .newsletter input[type="text"] {
+            width: 65%; /* Définir la largeur de l'input à 65% */
+            padding: 10px; /* Ajouter un espace intérieur pour le texte */
+            font-size: 16px; /* Agrandir la taille du texte */
+            background: transparent;
+            border: none;
+            border-left:  1px solid rgba(255, 255, 255, .3);
+            border-top: 1px solid rgba(255, 255, 255, .3);
+            padding: 1rem;
+            border-radius: 50px;
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            -moz-backdrop-filter: blur(5px);
+            box-shadow: 4px 4px 60px rgba(0, 0, 0, .2);
+            color: white;
+            font-weight: 500;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+            transition: all .3s;
+            margin-bottom: 15px;
+        }
+        
+        .newsletter button {
+            padding: 10px 20px; /* Ajouter un espacement intérieur au bouton */
+            font-size: 16px; /* Agrandir la taille du texte du bouton */
+            background: linear-gradient(45deg, #cabde0, rgb(142, 173, 161));
+            border: none;
+            border-left:  1px solid rgba(255, 255, 255, .3);
+            border-top: 1px solid rgba(255, 255, 255, .3);
+            padding: 1rem;
+            width: 150px;
+            border-radius: 50px;
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            -moz-backdrop-filter: blur(5px);
+            box-shadow: 4px 4px 60px rgba(0, 0, 0, .2);
+            color: #1f1266;
+            font-weight: 500;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+            transition: all .3s;
+            margin-bottom: 15px;
+        }
+          
